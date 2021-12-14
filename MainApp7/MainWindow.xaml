@@ -1,0 +1,33 @@
+﻿<Window x:Class="MainApp7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MainApp7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="792" Grid.ColumnSpan="4">
+            <MenuItem ToolTip="меню программы" Header="Программа" VerticalAlignment="Top" HorizontalAlignment="Left" Width="81" Height="26">
+                <MenuItem x:Name="info" Header="О программе" ToolTip="имя студента и задание" Click="info_Click" />
+                <MenuItem x:Name="exit" Header="Выйти" ToolTip="выйти и закрыть программу" Click="exit_Click"/>
+            </MenuItem>
+        </Menu>
+        <TextBox x:Name="OneOne" HorizontalAlignment="Left" Height="23" Margin="224,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="38"/>
+        <TextBox x:Name="OneTwo" HorizontalAlignment="Left" Height="23" Margin="280,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="38"/>
+        <TextBox x:Name="OneThree" HorizontalAlignment="Left" Height="23" Margin="335,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="38"/>
+        <TextBlock HorizontalAlignment="Left" Margin="224,62,0,0" TextWrapping="Wrap" Text="Первая дата:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="269,95,0,0" TextWrapping="Wrap" Text="-" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="324,95,0,0" TextWrapping="Wrap" Text="-" VerticalAlignment="Top"/>
+        <TextBox x:Name="TwoOne" HorizontalAlignment="Left" Height="23" Margin="228,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="38"/>
+        <TextBox x:Name="TwoTwo" HorizontalAlignment="Left" Height="23" Margin="284,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="38"/>
+        <TextBox x:Name="TwoThree" HorizontalAlignment="Left" Height="23" Margin="339,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="38"/>
+        <TextBlock HorizontalAlignment="Left" Margin="228,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Вторая "/><Run Text="дата"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="273,179,0,0" TextWrapping="Wrap" Text="-" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="328,179,0,0" TextWrapping="Wrap" Text="-" VerticalAlignment="Top"/>
+        <Button Content="Сравнить даты" HorizontalAlignment="Left" Margin="74,133,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="407,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Opacity="0.6"><Run Text="Формат даты:"/><LineBreak/><Run Text="День/Месяц/Год"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="155,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Opacity="0.6"><Run Text="Первая дата не должна быть позже че"/><Run Text="м вторая!"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="407,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Opacity="0.6" Text="Числа вводить без нулей в начале"/>
+    </Grid>
+</Window>
